@@ -17,9 +17,9 @@ def test_get_started_link(page: Page):
     expect(page.get_by_role("heading", name="Installation")).to_be_visible()
 
 
-with sync_playwright() as p:
-    browser = p.chromium.launch(headless=False, slow_mo=50)
-    page = browser.new_page()
-    page.goto("https://playwright.dev/")
-    page.screenshot(path="example.png")
-    browser.close()
+# with sync_playwright() as p:
+#     browser = p.chromium.launch(headless=False, slow_mo=50)
+#     page = browser.new_page()
+#     page.goto("https://playwright.dev/")
+#     page.screenshot(path="example.png")
+#     browser.close()
