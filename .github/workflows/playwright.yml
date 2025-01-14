@@ -20,8 +20,8 @@ jobs:
 #        pip install -r requirements.txt
     - name: Ensure browsers are installed
       run: |
-        pip install pytest-playwright
-        playwright install --with-deps
+        pip install playwright
+        python -m playwright install --with-deps
 #      run: python -m playwright install --with-deps
     - name: Run your tests
       run: pytest --tracing=retain-on-failure
