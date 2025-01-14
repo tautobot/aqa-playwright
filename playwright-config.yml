@@ -1,0 +1,9 @@
+use:
+  headless: true
+  baseURL: "https://example.com"
+  screenshot: only-on-failure
+  video: retain-on-failure
+projects:
+  - name: "chromium"
+  - name: "firefox"
+  - name: "webkit"

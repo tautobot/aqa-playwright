@@ -21,5 +21,5 @@ def test_get_started_link(page: Page):
 #     browser = p.chromium.launch(headless=False, slow_mo=50)
 #     page = browser.new_page()
 #     page.goto("https://playwright.dev/")
-#     page.screenshot(path="example.png")
+#     page.screenshot(path="screenshots/example.png")
 #     browser.close()
